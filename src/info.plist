@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>com.kostyshyn.alfredworkflow.urbandictionary</string>
+	<key>connections</key>
+	<dict>
+		<key>618DE570-93E6-493D-8514-34CCD5263E0A</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>4E8BC485-B686-42C8-8289-60D28E4BA873</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>Danylo Kostyshyn</string>
+	<key>description</key>
+	<string>Search UrbanDictionary.com for terms definition</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>UrbanDictionary</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>escaping</key>
+				<integer>36</integer>
+				<key>keyword</key>
+				<string>ud</string>
+				<key>runningsubtext</key>
+				<string>Please Wait</string>
+				<key>script</key>
+				<string>php -f ud.php {query}</string>
+				<key>title</key>
+				<string>Search UrbanDictionary for ...</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>618DE570-93E6-493D-8514-34CCD5263E0A</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>plusspaces</key>
+				<false/>
+				<key>url</key>
+				<string>http://www.urbandictionary.com/define.php?term={query}</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>4E8BC485-B686-42C8-8289-60D28E4BA873</string>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string></string>
+	<key>uidata</key>
+	<dict>
+		<key>4E8BC485-B686-42C8-8289-60D28E4BA873</key>
+		<dict>
+			<key>ypos</key>
+			<real>40</real>
+		</dict>
+		<key>618DE570-93E6-493D-8514-34CCD5263E0A</key>
+		<dict>
+			<key>ypos</key>
+			<real>40</real>
+		</dict>
+	</dict>
+	<key>webaddress</key>
+	<string></string>
+</dict>
+</plist>
