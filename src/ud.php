@@ -9,7 +9,8 @@
 require_once('workflows.php');
 $w = new Workflows();
 
-$query = urlencode( $argv[1] );
+$query = implode( ' ', array_slice( $argv, 1 ) );
+$query = urlencode( $query );
 
 $url = "http://api.urbandictionary.com/v0/define?term=$query";
 $suggestions = $w->request( $url );
