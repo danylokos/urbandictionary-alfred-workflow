@@ -1,5 +1,5 @@
 UrbanDictionary workflow for Alfred 2
 =================================================
-version 0.1
+version 0.2
 -------------------------------------------------
-![screenshot](https://dl.dropbox.com/u/8255225/ud-afred-scr.png)
+![screenshot](https://github.com/danylokostyshyn/urbandictionary-alfred-workflow/blob/master/ud-afred-scr.png)
